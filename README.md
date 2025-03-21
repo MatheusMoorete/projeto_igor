@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Mafia - Site de Venda de Produto
 
-## Getting Started
+Este é um site de venda para o produto The Mafia, desenvolvido com Next.js, TypeScript, Tailwind CSS e integração com pagamento PIX.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
+- [Next.js](https://nextjs.org/) - Framework React com renderização do lado do servidor
+- [TypeScript](https://www.typescriptlang.org/) - Superset tipado do JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário
+- [React Hook Form](https://react-hook-form.com/) - Biblioteca para gerenciamento de formulários
+- [Zod](https://zod.dev/) - Validação de esquemas TypeScript
+- [Lucide React](https://lucide.dev/guide/packages/lucide-react) - Ícones para a interface
+
+## Funcionalidades
+
+- Design moderno e responsivo
+- Página de vendas do produto
+- Detalhes do produto e recursos
+- Checkout com formulário validado
+- Integração de pagamento via PIX (simulado)
+- Layout otimizado para dispositivos móveis e desktop
+
+## Como Executar
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seu-usuario/site.git
+cd site
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Execute o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Acesse o site em [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+- `/src/app` - Páginas e rotas da aplicação
+- `/src/components` - Componentes reutilizáveis
+- `/src/interfaces` - Interfaces TypeScript
+- `/src/lib` - Utilitários e configurações
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy na Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este projeto está configurado para ser facilmente implantado na Vercel:
 
-## Deploy on Vercel
+1. Crie uma conta na [Vercel](https://vercel.com)
+2. Conecte seu repositório GitHub
+3. Importe o projeto e faça o deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Personalização
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Você pode personalizar o produto editando:
+
+- **`/src/lib/produto-config.ts`** - Informações do produto, preço e características
+- **`/public/imagens/`** - Imagens do produto
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.
