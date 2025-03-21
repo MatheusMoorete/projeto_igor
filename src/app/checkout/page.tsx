@@ -156,6 +156,7 @@ export default function CheckoutPage() {
                   
                   <div className="flex flex-col items-center mb-6">
                     <div className="bg-white p-4 rounded-lg mb-4">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={paymentData.qrcode} alt="QR Code PIX" className="w-48 h-48" />
                     </div>
                     
